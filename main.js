@@ -33,9 +33,7 @@ $(function () {
     let apiUrl = "https://api.github.com/repos/yuriydobryanskiy/gvalt/contents/test.json";
     try {
         $.getJSON(apiUrl, function (data) {
-            // Відкриваємо декодований вміст файлу
             let content = atob(data.content);
-            // Парсимо
             let jsonData = JSON.parse(content);
 
             // Заповнення полів форми з даними з jsonData
@@ -48,13 +46,12 @@ $(function () {
         console.log("Помилка отримання даних: " + error.message);
     }
 
-    // Додатковий код для обробки подій та відправки форми
+    // обробкa подій та відправкa форми
     $('#myForm').submit(function (event) {
         event.preventDefault();
 
         //перевірка полів на js
         let valid = true;
-        // Перевірка на обов'язкові поля
         if ($("#firstName").val() === "" || $("#lastName").val() === "" || $("#email").val() === "" || $("#phone").val() === "") {
             valid = false;
         }
@@ -70,8 +67,6 @@ $(function () {
             //telegram
             //лише для прикладу реалізовую відправку даних через js щоб на github можна було перевірити роботу форми
 
-
-
             let firstName = $("#firstName").val();
             let lastName = $("#lastName").val();
             let email = $("#email").val();
@@ -79,7 +74,7 @@ $(function () {
             let message = `Ім'я: ${firstName}\nПрізвище: ${lastName}\nМейл: ${email}\nТелефон: ${phone}`;
 
             let botToken = '6226343677:AAEiuNOpXwOW0Jf0k449Pc23_laMewgQjI0';
-            let chatId = '@gvalt_test';
+            let chatId = '@dobr_test';
 
             fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
                 .then(response => response.json())
@@ -105,7 +100,6 @@ $(function () {
             };
             // Відправляємо дані на бекенд через AJAX
             $.post("./process_form.php", formData, function (response) {
-                // Виводимо результат у відповідний блок
                 if (response.startsWith("success")) {
                     console.log(response);
                 } else {

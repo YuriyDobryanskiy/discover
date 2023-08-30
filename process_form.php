@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST["phone"];
 
     // Перевірка даних
-
     if (empty($firstName) || empty($lastName) || empty($email) || empty($phone)) {
         echo "error: Поля мають бути заповнені.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
