@@ -695,6 +695,9 @@ footer .subscribe form button {
     font-weight: var(--bold-font);
     line-height: 1;
     cursor: pointer;
+    max-width: 360px;
+    display: block;
+    margin: auto;
 }
 
 #myForm input {

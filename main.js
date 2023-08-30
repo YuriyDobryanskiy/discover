@@ -60,6 +60,11 @@ $(function () {
         if (!emailPattern.test($("#email").val())) {
             valid = false;
         }
+		// Перевірка кількості цифр
+		var phoneNumber = $("#phone").val().replace(/\D/g, "");
+		if (phoneNumber.length < 9 || phoneNumber.length > 9) { 
+			valid = false;
+		}
         //якщо є помилки
         if (!valid) {
             alert("Будь ласка, заповніть обов'язкові поля правильно.");
