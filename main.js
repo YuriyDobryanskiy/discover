@@ -30,7 +30,7 @@ $(function () {
     const iti = intlTelInput(input);
 
     //github api
-    let apiUrl = "https://api.github.com/repos/yuriydobryanskiy/gvalt/contents/test.json";
+    let apiUrl = "https://api.github.com/repos/yuriydobryanskiy/discover/contents/test.json";
     try {
         $.getJSON(apiUrl, function (data) {
             let content = atob(data.content);
@@ -55,7 +55,7 @@ $(function () {
         if ($("#firstName").val() === "" || $("#lastName").val() === "" || $("#email").val() === "" || $("#phone").val() === "") {
             valid = false;
         }
-        // Перевірка правильного формату електронної пошти
+        // Перевірка формату електронної пошти
         let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test($("#email").val())) {
             valid = false;
