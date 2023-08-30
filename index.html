@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover the most engaging places</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="hero container">
+        <div class="menu inline-flex">
+          <a href="" target="_self">
+            <svg class="icon" width="87" height="35">
+              <use href="./public/icons/icons.svg#icon-section-logo"></use>
+            </svg>
+          </a>
+          <nav>
+            <ul class="inline-flex topnav" id="topnav">
+              <li><a href="#home">home</a></li>
+              <li><a href="#hotels">hotels</a></li>
+              <li><a href="#restaurants">restaurants</a></li>
+              <li><a href="#tours">tours</a></li>
+              <li><a href="#destinations">destinations</a></li>
+              <li><a href="#activities">activities</a></li>
+              <li><a href="#contact">contact </a></li>
+            </ul>
+            <a href="javascript:void(0);" class="iconb">
+              <svg viewBox="0 0 100 80" width="20" height="20" fill="#fff">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+            </a>
+          </nav>
+          <div class="office inline-flex">
+            <div class="text">
+              <p>Holla,</p>
+              <p>Ales Nesetril</p>
+            </div>
+            <div class="person-img active">
+              <img src="./public/images/person.jpg" alt="person img" width="48" height="48">
+              <div class="message"></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="title">
+          <h1>Discover the most engaging places</h1>
+          <a href="#">
+            <button>
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-primary-business-group"></use>
+              </svg>Discover on 3D Globe
+            </button>
+          </a>
+        </div>
+        <form class="search inline-flex" action="" method="get">
+          <div class="fields inline-flex">
+            <div class="field-wrapper inline-flex">
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-map-map-pin-line"></use>
+              </svg>
+              <div class="input-wrapper">
+                <label for="location">Location</label><input type="text" name="location" id="location"
+                  placeholder="Explore nearby destinations" autocomplete="off">
+              </div>
+            </div>
+            <div class="field-wrapper inline-flex">
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-map-riding-line"></use>
+              </svg>
+              <div class="input-wrapper">
+                <label for="activity">Activity</label><input type="text" name="activity" id="activity"
+                  placeholder="All Activity" autocomplete="off">
+              </div>
+            </div>
+            <div class="field-wrapper inline-flex">
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-business-calendar-event-fill"></use>
+              </svg>
+              <div class="input-wrapper">
+                <label for="when">When</label><input type="text" name="when" id="when" placeholder="Choose a Date"
+                  autocomplete="off">
+              </div>
+            </div>
+            <div class="field-wrapper inline-flex">
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-user-group-line"></use>
+              </svg>
+              <div class="input-wrapper">
+                <label for="guests">Guests</label><input type="text" name="guests" id="guests" placeholder="1 guest"
+                  autocomplete="off">
+              </div>
+            </div>
+          </div>
+          <button type="submit">
+            <svg class="icon" width="24" height="24">
+              <use href="./public/icons/icons.svg#icon-section-primary-system-search-line"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <div class="view-all inline-flex">
+            <h2>Popular Destinations</h2>
+          </div>
+          <div class="content">
+            <ul>
+              <li class="palce-small">
+                <a href="#">
+                  <img src="./public/images/section-img.jpg" alt="Big Sur" width="200">
+                  <h3>Big Sur</h3>
+                  <div class="detail">
+                    California, USA
+                  </div>
+                </a>
+              </li>
+              <li class="palce-small">
+                <a href="#">
+                  <img src="./public/images/prescott.jpg" alt="Prescott" width="200">
+                  <h3>Prescott</h3>
+                  <div class="detail">
+                    <div class="gps">
+                      Arizona, USA
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-small">
+                <a href="#">
+                  <img src="./public/images/mayers.jpg" alt="Fort Mayers" width="200">
+                  <h3>Fort Mayers</h3>
+                  <div class="detail">
+                    <div class="gps">
+                      Florida, USA
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-small">
+                <a href="#">
+                  <img src="./public/images/tucson.jpg" alt="Tucson" width="200">
+                  <h3>Tucson</h3>
+                  <div class="detail">
+                    <div class="gps">
+                      Arizona, USA
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-small">
+                <a href="#">
+                  <img src="./public/images/joseph.jpg" alt="St. Joseph" width="200">
+                  <h3>St. Joseph</h3>
+                  <div class="detail">
+                    <div class="gps">
+                      Michigan, USA
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-small">
+                <a href="#">
+                  <img src="./public/images/madrid.jpg" alt="Madrid" width="200">
+                  <h3>Madrid</h3>
+                  <div class="detail">
+                    <div class="gps">
+                      Spain
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="view-all inline-flex">
+            <h2>Hotels and Restaurants</h2>
+            <a href="#"><button>
+                View all<svg class="icon" width="20" height="20">
+                  <use href="./public/icons/icons.svg#icon-section-secondary-system-arrow-right-line"></use>
+                </svg>
+              </button></a>
+          </div>
+          <div class="content">
+            <ul>
+              <li class="palce-big">
+                <a href="#">
+                  <img src="./public/images/section-img-b.jpg" alt="Monastero Santa Rosa Hotel" width="316">
+                  <h3>Monastero Santa Rosa Hotel & Spa</h3>
+                  <div class="detail inline-flex">
+                    <div class="gps inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-map-map-pin-line"></use>
+                      </svg>Salerno, Italy
+                    </div>
+                    <div class="stars inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-big">
+                <a href="#">
+                  <img src="./public/images/tremezzo.jpg" alt="Grand Hotel Tremezzo" width="316">
+                  <h3>Grand Hotel Tremezzo</h3>
+                  <div class="detail inline-flex">
+                    <div class="gps inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-map-map-pin-line"></use>
+                      </svg>Lake Como, Italy
+                    </div>
+                    <div class="stars inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-line"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-line"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-big">
+                <a href="#">
+                  <img src="./public/images/udaipur.jpg" alt="The Oberoi Udaivilas, Udaipur" width="316">
+                  <h3>The Oberoi Udaivilas, Udaipur</h3>
+                  <div class="detail inline-flex">
+                    <div class="gps inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-map-map-pin-line"></use>
+                      </svg>Udaipur, India
+                    </div>
+                    <div class="stars inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-line"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="palce-big">
+                <a href="#">
+                  <img src="./public/images/hills.jpg" alt="AKA Beverly Hills" width="316">
+                  <h3>AKA Beverly Hills</h3>
+                  <div class="detail inline-flex">
+                    <div class="gps inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-map-map-pin-line"></use>
+                      </svg>Los Angeles, United States
+                    </div>
+                    <div class="stars inline-flex">
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-fill"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-line"></use>
+                      </svg>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-rating-system-star-line"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="view-all inline-flex">
+            <h2>Travel Tips and Advice</h2>
+            <a href="#"><button>
+                View all<svg class="icon" width="20" height="20">
+                  <use href="./public/icons/icons.svg#icon-section-secondary-system-arrow-right-line"></use>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <div class="content">
+            <ul>
+              <li class="tips">
+                <img src="./public/images/tips.jpg" alt="East Village Ice Cream Crawl" width="316">
+                <div class="text-wrapper">
+                  <a href="#">
+                    <h3>East Village Ice Cream Crawl</h3>
+                  </a>
+                  <p>We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each
+                    ice
+                    cream store we'll
+                    explore the story behind the business and see what makes the ice cream unique as you savor every…
+                  </p>
+                  <ul class="detail inline-flex">
+                    <li>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-business-calendar-2-line"></use>
+                      </svg>Today
+                    </li>
+                    <li>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-user-group"></use>
+                      </svg>Maria Philips
+                    </li>
+                    <li>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-communication-chat-3-line"></use>
+                      </svg>2
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <li class="tips">
+                <img src="./public/images/brooklyn.jpg" alt="Brooklyn Bridge cinematic photo walk" width="316">
+                <div class="text-wrapper">
+                  <a href="#">
+                    <h3>Brooklyn Bridge cinematic photo walk</h3>
+                  </a>
+                  <p>This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to
+                    capture clients at
+                    different locations upon request for an additional charge.
+                  </p>
+                  <ul class="detail inline-flex">
+                    <li>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-business-calendar-2-line"></use>
+                      </svg>Today
+                    </li>
+                    <li>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-user-group"></use>
+                      </svg>James Calzoni
+                    </li>
+                    <li>
+                      <svg class="icon" width="16" height="16">
+                        <use href="./public/icons/icons.svg#icon-section-communication-chat-3-line"></use>
+                      </svg>17
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="view-all inline-flex">
+            <h2>Activities</h2>
+            <a href="#"><button>
+                View all<svg class="icon" width="20" height="20">
+                  <use href="./public/icons/icons.svg#icon-section-secondary-system-arrow-right-line"></use>
+                </svg>
+              </button></a>
+          </div>
+          <div class="content">
+            <ul>
+              <li class="sport">
+                <a href="#">
+                  <img src="./public/images/sport.jpg" alt="Sailing" width="316">
+                  <h3>Sailing</h3>
+                </a>
+              </li>
+              <li class="sport">
+                <a href="#">
+                  <img src="./public/images/climbing.jpg" alt="Climbing" width="316">
+                  <h3>Climbing</h3>
+                </a>
+              </li>
+              <li class="sport">
+                <a href="#">
+                  <img src="./public/images/sking.jpg" alt="Skiing" width="316">
+                  <h3>Skiing</h3>
+                </a>
+              </li>
+              <li class="sport">
+                <a href="#">
+                  <img src="./public/images/hiking.jpg" alt="Hiking" width="316">
+                  <h3>Hiking</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="about-us">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis
+              tristique
+              imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices.
+              Class aptent
+              taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <a href="#"><button>
+                Read more<svg class="icon" width="20" height="20">
+                  <use href="./public/icons/icons.svg#icon-section-secondary-system-arrow-right-line"></use>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <img src="./public/images/about-us.jpg" alt="" width="550">
+        </section>
+        <section>
+          <h2>Contact Us</h2>
+          <form id="myForm">
+            <div class="form-group">
+              <label for="firstName">Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Secondname</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required />
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Send</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container inline-flex">
+        <div class="slogan">
+          <svg class="icon" width="87" height="35">
+            <use href="./public/icons/icons.svg#icon-section-logo-f"></use>
+          </svg>
+          <p>We always make our customers happy by providing as many choises as possible</p>
+          <ul class="social inline-flex">
+            <li><a href="#">
+                <svg class="icon" width="32" height="32">
+                  <use href="./public/icons/icons.svg#icon-fb"></use>
+                </svg>
+              </a></li>
+            <li><a href="#">
+                <svg class="icon" width="32" height="32">
+                  <use href="./public/icons/icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+            <li><a href="#">
+                <svg class="icon" width="32" height="32">
+                  <use href="./public/icons/icons.svg#icon-nstagram"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li>
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Menu</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">Why 2rism</a></li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <h4>Subscribe on our destination review newsletters</h4>
+          <form action="" method="get" class="inline-flex">
+            <div class="input-block inline-flex">
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-business-mail-line"></use>
+              </svg>
+              <label for="email">Your Email<br><input type="email" name="email" id="email"
+                  placeholder="enter your email"></label>
+            </div>
+            <button type="submit">
+              <svg class="icon" width="24" height="24">
+                <use href="./public/icons/icons.svg#icon-section-primary-system-arrow-right-fill"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script src="./main.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
